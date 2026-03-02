@@ -4,7 +4,7 @@ import { clientId, clientSecret, scopesStr, secret } from '@/utils/secrets/secre
 import NextAuth, { NextAuthOptions } from 'next-auth';
 import Google from 'next-auth/providers/google';
 import { cookies } from 'next/headers';
-
+ 
 
 const authOptions: NextAuthOptions = {
   providers: [
