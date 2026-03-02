@@ -1,5 +1,8 @@
 import {google} from 'googleapis';
-import { clientId, clientSecret, redirectUrl } from '../secrets/secrets';
+const clientId = process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID;
+const clientSecret = process.env.GOOGLE_CLIENT_SECRET;
+const redirectUrl = process.env.NEXT_PUBLIC_GOOGLE_REDIRECT_URL;
+
 
 const OAuth2 = google?.auth?.OAuth2;
 
